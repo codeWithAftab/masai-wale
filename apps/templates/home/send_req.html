@@ -1,0 +1,31 @@
+{% extends "layouts/home_sup.html" %}
+{% block content %}
+{% if org == 'False' %}
+{% include 'includes/sidebar_sup.html' %}
+{% else %}
+{% include 'includes/sidebar_org.html' %}
+{% endif %}
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+    
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body" >
+                    <label for="org">List of Organisation</label>
+                    <select name="Org" id="Org" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Org 1">Org 1</option>
+                        <option value="Org 2">Org 2</option>
+                    </select> <br>
+                    <button type="submit" name="req" class="btn btn-primary shadow-2 mb-4">Send Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'includes/scripts.html' %}
+{% endblock content %}

@@ -1,0 +1,253 @@
+{% extends "layouts/home_org.html" %}
+{% block content %}
+{% if org == 'False' %}
+{% include 'includes/sidebar_sup.html' %}
+{% else %}
+{% include 'includes/sidebar_org.html' %}
+{% endif %}
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <div class="col-xl-24 col-md-12 m-b-30">
+
+                    <div class="col-sm-12">
+                        <h5 class="mt-4">Devices</h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12" style="padding-right: 0%;">
+                                <ul class="nav flex-column nav-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <li><a class="nav-link text-left active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Dustbins</a></li>
+                                    <li><a class="nav-link text-left" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Smarttoilets</a></li>
+                                    <li><a class="nav-link text-left" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Waterpoints</a></li>
+                                    <li><a class="nav-link text-left" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Devices</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-9 col-sm-12" style="padding-left: 0%;">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr class="unread">
+                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user"></td>
+                                                    <td>
+                                                        <h6 class="mb-1">Isabella Christensen</h6>
+                                                        <p class="m-0">Lorem Ipsum is simply…</p>
+                                                    </td>
+                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Delete</a>
+                                                </tr>
+                                                <tr class="unread">
+                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user"></td>
+                                                    <td>
+                                                        <h6 class="mb-1">Mathilde Andersen</h6>
+                                                        <p class="m-0">Lorem Ipsum is simply text of…</p>
+                                                    </td>
+                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Delete</a>
+                                                </tr>
+                                                <tr class="unread">
+                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-3.jpg" alt="activity-user"></td>
+                                                    <td>
+                                                        <h6 class="mb-1">Karla Sorensen</h6>
+                                                        <p class="m-0">Lorem Ipsum is simply…</p>
+                                                    </td>
+                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Delete</a>
+                                                </tr>
+                                                <tr class="unread">
+                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user"></td>
+                                                    <td>
+                                                        <h6 class="mb-1">Ida Jorgensen</h6>
+                                                        <p class="m-0">Lorem Ipsum is simply text of…</p>
+                                                    </td>
+                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Delete</a>
+                                                </tr>
+                                                <tr class="unread">
+                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user"></td>
+                                                    <td>
+                                                        <h6 class="mb-1">Albert Andersen</h6>
+                                                        <p class="m-0">Lorem Ipsum is simply dummy…</p>
+                                                    </td>
+                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Delete</a>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <p class="mb-0">Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <p class="mb-0">Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                        <p class="mb-0">Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>User type :
+
+
+                Agent 
+                
+                Supervisor
+                
+                Org
+                
+                
+                
+                Agent : (App & PC dashboard)
+                
+                
+                Name
+                
+                Mobile no as id
+                
+                Email id as id
+                
+                Country
+                
+                State
+                
+                City
+                
+                Address
+                
+                Having access to devices
+                
+                Bank account
+                
+                
+                
+                Supervisor :(PC dashboard access by mail id)
+                
+                
+                Name
+                
+                Email id as id
+                
+                Country
+                
+                State
+                
+                City
+                
+                Address, Pincode 
+                
+                Having access to Agents
+                
+                
+                Org :(PC dashboard access by mail id)
+                
+                
+                Name
+                
+                Email id as id
+                
+                Country
+                
+                State
+                
+                City
+                
+                Address, Pincode 
+                
+                Having access to Supervisor
+                
+                Bank account
+                
+                
+                
+                Homepage : 
+                
+                The public can visit- Just can View Home page map with devices marking icons & devices open data 
+                
+                Waterpoint - Water fill level of a dispenser, TDS
+                
+                User type :
+
+
+                Agent 
+                
+                Supervisor
+                
+                Org
+                
+                
+                
+                Agent : (App & PC dashboard)
+                
+                
+                Name
+                
+                Mobile no as id
+                
+                Email id as id
+                
+                Country
+                
+                State
+                
+                City
+                
+                Address
+                
+                Having access to devices
+                
+                Bank account
+                
+                
+                
+                Supervisor :(PC dashboard access by mail id)
+                
+                
+                Name
+                
+                Email id as id
+                
+                Country
+                
+                State
+                
+                City
+                
+                Address, Pincode 
+                
+                Having access to Agents
+                
+                
+                Org :(PC dashboard access by mail id)
+                
+                
+                Name
+                
+                Email id as id
+                
+                Country
+                
+                State
+                
+                City
+                
+                Address, Pincode 
+                
+                Having access to Supervisor
+                
+                Bank account
+                
+                
+                
+                Homepage : 
+                
+                The public can visit- Just can View Home page map with devices marking icons & devices open data 
+                
+                Waterpoint - Water fill level of a dispenser, TDS
+                
+                                
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'includes/scripts.html' %}
+{%  endblock content %}
